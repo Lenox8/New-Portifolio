@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Oxanium } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import App from "@/components/Hero/LightDemo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Oxanium({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -25,9 +23,22 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+     className={cn("antialiased", poppins.className, "font-sans")} 
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <body className="relative select-none min-h-screen w-full bg-slate-950 text-white overflow-x-hidden">
+        
+        {/* Fundo Global */}
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <App />
+        </div>
+
+        {/* Conteúdo das Páginas */}
+        <div className="relative z-10">
+          {children}
+        </div>
+
+      </body>
     </html>
   );
 }
+
