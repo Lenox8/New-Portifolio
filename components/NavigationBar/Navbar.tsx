@@ -1,8 +1,8 @@
 import React from "react";
 import LineHoverLink from "../ui/line-hover-link";
-import { AnimatedButtonDemo } from "../AnimatedButton/AnimatedButton";
 import Image from "next/image";
 import logotipo from "@/public/LOGO.svg";
+import { AvatarDemo } from "../Avatar/Avatar";
 
 const Navbar = () => {
   return (
@@ -55,9 +55,8 @@ const Navbar = () => {
           </LineHoverLink>
         </li>
       </ul>
-
-      <div className="shrink-0">
-        <AnimatedButtonDemo />
+      <div className="shrink-0 ">
+        <span><AvatarDemo /></span>
       </div>
     </nav>
   );

@@ -38,7 +38,7 @@ export function ScrollTimelineExample() {
   return (
     <ScrollTimeline 
       events={events}
-      title="My Journey"
+      title=" [ My Journey ]"
       subtitle="Scroll to explore my timeline"
       progressIndicator={true}
       cardAlignment="alternating"

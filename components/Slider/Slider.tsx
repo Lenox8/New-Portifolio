@@ -35,7 +35,7 @@ const logos: SlidingLogoMarqueeItem[] = [
     <div className="w-full py-4 mb-15">
       <SlidingLogoMarquee
         items={logos}
-        speed={1.5}              
+        speed={6}              
         height="100px"              
         enableBlur={true}          
         blurIntensity={3}          

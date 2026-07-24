@@ -7,13 +7,13 @@ export default function AppAccent() {
       {/* Quad corners + dual color + glow */}
       <AccentFrame
         color="cyan"
-        mode="quad"
-        hoverEffect="trace"
+        mode="duo"
+        hoverEffect="expand"
         cornerLength={24}
         cornerThickness={3}
         className="text-white text-center"
       >
-        <p className="text-xl text-start">
+        <p className="text-xl text-start hover:cursor-pointer">
           Hi, I’m Lenox. Specializing in modern web technologies, I turn complex
           ideas into fast, reliable, and maintainable applications. I bridge the
           gap between seamless user experiences and robust backend systems to
