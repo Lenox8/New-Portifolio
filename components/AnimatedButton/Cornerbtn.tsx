@@ -6,7 +6,7 @@ export default function AppBtn() {
     <div className="flex gap-4 flex-wrap">
 
       <CornerCutButton color="#fff" hoverColor="pink" hoverEffect="shift" hoverOutlined >
-        <a href="/devresume.docx.pdf" className="flex gap-2">download resume <span><ArrowDown /></span></a>
+        <a href="/ResumeLenox.pdf" className="flex gap-2">download resume <span><ArrowDown /></span></a>
       </CornerCutButton>
     </div>
   );
